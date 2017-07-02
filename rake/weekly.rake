@@ -81,7 +81,7 @@ articles:
 end
 
 def get_issue_name(weekly_date)
-  "#{weekly_date} 文章收集"
+  "#{weekly_date}"
 end
 
 def create_weekly(weekly_date, weekly_content)
@@ -176,7 +176,6 @@ def open_issue(weekly_date)
   client = Octokit::Client.new(:access_token => get_access_token)
   content = <<-EOS
 :loud_sound:MSBU Weekly #{weekly_date} is now in collecting.
-Post your entry following the instruction of <https://github.com/msbu-tech/weekly#投稿>.
   EOS
   client.create_issue(get_weekly_repo, get_issue_name(weekly_date), content)
 

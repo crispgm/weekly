@@ -74,7 +74,7 @@ def get_access_token
 end
 
 def get_weekly_repo
-  "crisp/weekly".freeze
+  "crispgm/weekly".freeze
 end
 
 def get_weekly_dir
