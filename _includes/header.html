@@ -1,0 +1,18 @@
+<nav>
+  <div class="wrapper">
+    <div id="menu">
+      <div class="menu-item {% if page.title == "Archive" %}{{ "menu-active" }}{% endif %}">
+        <a href="{{ site.baseurl }}/archive/">历史周刊</a>
+      </div>
+      <div class="menu-item">
+        <a href="{{ site.baseurl }}/feed.xml" target="_blank">订阅</a>
+      </div>
+      <div class="menu-item {% if page.title == "About" %}{{ "menu-active" }}{% endif %}">
+        <a href="{{ site.baseurl }}/about/">关于</a>
+      </div>
+    </div>
+    <div id="head">
+      <a href="{{ site.baseurl }}/">Crisp Programming Weekly</a>
+    </div>
+  </div>
+</nav>

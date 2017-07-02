@@ -1,0 +1,25 @@
+---
+layout: default
+title: Archive
+permalink: /archive/
+---
+
+{% assign sorted_weekly = site.posts %}
+{% for weekly in sorted_weekly %}
+<div class="article">
+  <div class="article-item">
+    <div class="article-title">
+      <a href="{{ site.baseurl }}{{ weekly.url }}">
+        {{ weekly.date | date: "%Y/%m/%d" }}
+      </a>
+    </div>
+    <div class="article-comment">
+      <ul>
+      {% for item in weekly.articles %}
+        <li><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endfor %}

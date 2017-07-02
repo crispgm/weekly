@@ -1,0 +1,49 @@
+.article {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f7f8fa;
+  box-shadow: 0 .1rem .4rem 0 #ddd;
+  hyphens: auto;
+  &:hover{
+    box-shadow:0 .1rem .4rem .1rem #ddd;
+  }
+
+  a {
+    color: #333;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.article-item {
+  /*margin-top: .5rem;*/
+}
+.article-share {
+  display: none;
+}
+.article-title {
+  font-size: 1.2rem;
+  color: #757980;
+  font-weight: bold;
+
+  &:hover {
+    .article-share {
+      display: inline-block;
+    }
+  }
+}
+.article-comment {
+  margin-top: .4rem;
+  font-size: .9rem;
+}
+@media (min-width: 48rem) {
+  .article-date {
+    float: right;
+    margin-left: 1rem;
+  }
+  .article-item {
+  }
+}

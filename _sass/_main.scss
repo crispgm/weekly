@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  font-size: 16px;
+}
+@media (max-width: 48rem) {
+  html {
+    font-size: 12px;
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei",sans-serif;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  color: #393c40;
+  background-color: #f0f1f2;
+  word-wrap: break-word;
+  text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 48rem;
+}
+@media (max-width: 48rem) {
+  .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+nav{
+  color: #ffffff;
+  background-color: #393c40;
+  border-bottom: .1rem solid #ddd;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+/* Menu */
+#head {
+  margin-top: -0.2rem;
+  font-size: 1.2rem;
+  text-align: left;
+  font-weight: bold;
+}
+#menu {
+  display: flex;
+  margin-left: 0.8rem;
+  float: right;
+}
+.menu-item {
+  padding-left: 0.8rem;
+  text-align: center;
+}
+.menu-item, #head {
+  a {
+    color: #efefef;
+    text-decoration: none;
+
+    &:hover {
+      color: #b4b8bf;
+    }
+  }
+}
+.menu-active {
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+#content {
+  text-align: left;
+  min-height: 10rem;
+}
+.page-date {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.page-title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  a {
+    color: #393c40;
+  }
+}
+footer {
+  background-color: #f7f8fa;
+  font-size: 1rem;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+img {
+  max-width: 100%;
+}
+.hidden-newsletter {
+  text-align: center;
+  color: #f0f1f2;
+  a {
+    color: #f0f1f2;
+    &:hover {
+      color: #393c40;
+    }
+  }
+}
+@media (max-width: 48rem) {
+  .hidden-newsletter {
+    display: none;
+  }
+}
+ul li {
+  margin-left: -1rem;
+  line-height: 1.5;
+}

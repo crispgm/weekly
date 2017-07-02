@@ -1,0 +1,24 @@
+baseurl: "/weekly"
+collections:
+  newsletter:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: weekly-post
+      title: Crisp Weekly
+  - scope:
+      path: ""
+      type: newsletter
+    values:
+      layout: weekly-mail
+      title: Crisp Weekly
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - LICENSE
+  - README.md
+  - /rake

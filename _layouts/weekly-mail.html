@@ -1,0 +1,63 @@
+---
+layout: nil
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crisp Programming Weekly {{ page.date | date:"%Y/%m/%d" }}</title>
+  <style type="text/css">
+  body {
+    color: #393c40;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: normal;
+  }
+  h3 {
+    font-weight: normal;
+  }
+  h4 {
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+  h5 {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  a {
+    color: #4a90e2;
+  }
+  .link {
+    margin-bottom: 3em;
+  }
+  .tags {
+  	margin-top: 0;
+  }
+  </style>
+</head>
+<body>
+  <h1>Crisp Programming Weekly {{ page.date | date:"%Y/%m/%d" }}</h1>
+  <h3 class="date">{{ page.date | date:"%Y/%m/%d" }}</h3>
+  <h3 class="link">
+    <a href="https://crispgm.github.io/weekly/{{ page.date | date:"%Y-%m-%d" }}-weekly.html">https://crispgm.github.io/weekly/{{ page.date | date:"%Y-%m-%d" }}-weekly.html</a>
+    <a href="https://crispgm.github.io/weekly/feed.xml">订阅</a>
+  </h3>
+  {% for weekly in site.posts %}
+    {% assign weeklyDate = weekly.date | date: '%Y-%m-%d-weekly' %}
+    {% if weeklyDate == page.datasrc %}
+      {% assign curWeekly = weekly %}
+    {% endif %}
+  {% endfor %}
+  {% for article in curWeekly.articles %}
+  <h3><a href="{{ article.link }}">{{ article.title }}</a></h3>
+  <h3>{{ article.comment }}</h3>
+  <hr>
+  {% endfor %}
+
+  <h2>MSBU Tech &copy; {{ page.date | date:"%Y" }}. <a href="https://crispgm.github.io/weekly/{{ page.date | date:"%Y-%m-%d" }}-weekly.html">https://crispgm.github.io/weekly/{{ page.date | date:"%Y-%m-%d" }}-weekly.html</a></h2>
+</body>
+</html>

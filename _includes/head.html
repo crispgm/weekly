@@ -1,0 +1,13 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/font-awesome.min.css">
+  {% if page.highlight == true || blog.highlight == true %}
+  <script src="{{ site.baseurl }}/assets/scripts/highlight.pack.js"></script>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/zenburn.css">
+  <script>hljs.initHighlightingOnLoad();</script>
+  {% endif %}
+</head>

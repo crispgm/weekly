@@ -1,0 +1,31 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crisp Programming Weekly</title>
+    <description>A curated list of tech articles.</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+    {% assign sorted_weekly = site.posts | reverse %}
+    {% for post in sorted_weekly %}
+      <item>
+        <title>Crisp Programming Weekly - {{ post.date | date: "%Y/%m/%d"}}</title>
+        {% capture content %}
+        {% for item in post.articles %}
+        <h2><a href="{{ item.link }}">{{ item.title }}</a></h2>
+        <p>{{ item.comment }}</p>
+        {% endfor %}
+        {% endcapture %}
+        <description>{{ content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

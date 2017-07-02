@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="page-title">
+Crisp Programming Weekly
+</div>
+<div class="page-date">
+{{ page.date | date:"%Y/%m/%d" }}
+</div>
+{% for article in page.articles %}
+<div id="A{{ forloop.index }}" class="article">
+  <div class="article-title">
+    <a href="{{ article.link}}" target="_blank">{{ article.title }}</a>
+    <span class="article-share">
+      <a href="#A{{ forloop.index }}">
+        <i class="fa fa-paragraph"></i>
+      </a>
+    </span>
+  </div>
+  {% if article.comment %}
+    <div class="article-comment">
+      {{ article.comment }}
+    </div>
+  {% endif %}
+</div>
+{% endfor %}
+<div class="hidden-newsletter"><a href="{{ site.baseurl }}/newsletter/{{ page.date | date:"%Y-%m-%d" }}-weekly.html">Newsletter</a></div>
