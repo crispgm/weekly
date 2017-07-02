@@ -1,7 +1,7 @@
 # Crisp Wiki
 
 [![](https://img.shields.io/badge/powered%20by-jekyll-red.svg)](https://jekyllrb.com)
-[![](https://api.travis-ci.org/crispgm/crispgm.github.io.svg)](https://travis-ci.org/crispgm/crispgm.github.io)
+[![](https://api.travis-ci.org/crispgm/weekly.svg)](https://travis-ci.org/crispgm/weekly)
 ![](https://stars-badge.herokuapp.com/crispgm/weekly/last-pages-build.svg)
 
 Personal curation of tech articles.
@@ -11,7 +11,7 @@ Personal curation of tech articles.
 1. Clone
 
     ```
-    $ git clone https://github.com/crispgm/crispgm.github.io.git
+    $ git clone https://github.com/crispgm/weekly.git
     ```
 
 2. Bundler
