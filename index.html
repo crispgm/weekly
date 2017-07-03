@@ -7,17 +7,12 @@ Latest Articles
 </div>
 {% assign page = site.posts | first %}
 <div class="page-date">
-{{ page.date | date:"%Y/%m/%d" }}
+  <a href="{{ site.baseurl }}{{ page.url }}">{{ page.date | date:"%Y/%m/%d" }}</a>
 </div>
 {% for article in page.articles %}
 <div id="A{{ forloop.index }}" class="article">
   <div class="article-title">
-    <a href="{{ article.link}}" target="_blank">{{ article.title }}</a>
-    <span class="article-share">
-      <a href="#A{{ forloop.index }}">
-        <i class="fa fa-paragraph"></i>
-      </a>
-    </span>
+    <a href="{{ article.link }}" target="_blank">{{ article.title }}</a>
   </div>
   {% if article.comment %}
     <div class="article-comment">

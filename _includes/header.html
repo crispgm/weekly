@@ -1,6 +1,9 @@
 <nav>
-  <div class="wrapper">
-    <div id="menu">
+  <header class="wrapper">
+    <div class="head">
+      <a href="{{ site.baseurl }}/">Crisp Programming Weekly</a>
+    </div>
+    <div class="menu">
       <div class="menu-item {% if page.title == "Archive" %}{{ "menu-active" }}{% endif %}">
         <a href="{{ site.baseurl }}/archive/">Archive</a>
       </div>
@@ -11,8 +14,5 @@
         <a href="{{ site.baseurl }}/about/">About</a>
       </div>
     </div>
-    <div id="head">
-      <a href="{{ site.baseurl }}/">Crisp Programming Weekly</a>
-    </div>
-  </div>
+  </header>
 </nav>

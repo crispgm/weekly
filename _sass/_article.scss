@@ -6,6 +6,7 @@
   background-color: #f7f8fa;
   box-shadow: 0 .1rem .4rem 0 #ddd;
   hyphens: auto;
+  
   &:hover{
     box-shadow:0 .1rem .4rem .1rem #ddd;
   }
@@ -37,12 +38,4 @@
 }
 .article-comment {
   font-size: .9rem;
-}
-@media (min-width: 48rem) {
-  .article-date {
-    float: right;
-    margin-left: 1rem;
-  }
-  .article-item {
-  }
 }

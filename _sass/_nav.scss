@@ -1,0 +1,53 @@
+nav{
+  color: #ffffff;
+  background-color: #393c40;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+.head {
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: bold;
+  text-align: left;
+}
+.menu {
+  display: flex;
+  text-align: right;
+}
+.menu-item {
+  padding-left: 0.8rem;
+  text-align: center;
+}
+.menu-item, .head {
+  a {
+    color: #efefef;
+    text-decoration: none;
+
+    &:hover {
+      color: #b4b8bf;
+    }
+  }
+}
+.menu-active {
+  a {
+    color: #b4b8bf;
+    text-decoration: none;
+  }
+}
+@media (max-width: 48rem) {
+  header {
+    display: block;
+  }
+  .menu {
+    margin-top: .4rem;
+    div:first-child {
+      padding-left: 0;
+    }
+  }
+}
