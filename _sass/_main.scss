@@ -72,24 +72,12 @@ footer {
 img {
   max-width: 100%;
 }
-.hidden-newsletter {
-  text-align: center;
-  color: #f0f1f2;
-  a {
-    color: #f0f1f2;
-    &:hover {
-      color: #393c40;
-    }
+ul {
+  li {
+    margin-left: -1.2rem;
+    line-height: 1.5;
   }
-}
-@media (max-width: 48rem) {
-  .hidden-newsletter {
-    display: none;
-  }
-}
-ul li {
-  margin-left: -2rem;
-  line-height: 1.5;
+  margin-bottom: 0;
 }
 p {
   margin: 0;

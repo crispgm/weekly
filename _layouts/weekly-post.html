@@ -5,7 +5,7 @@ layout: default
 Crisp Programming Weekly
 </div>
 <div class="page-date">
-{{ page.date | date:"%Y/%m/%d" }}
+#{{ page.date | date:"%Y%m%d" }}
 </div>
 {% for article in page.articles %}
 <div id="A{{ forloop.index }}" class="article">
@@ -24,4 +24,3 @@ Crisp Programming Weekly
   {% endif %}
 </div>
 {% endfor %}
-<div class="hidden-newsletter"><a href="{{ site.baseurl }}/newsletter/{{ page.date | date:"%Y-%m-%d" }}-weekly.html">Newsletter</a></div>

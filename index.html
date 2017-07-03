@@ -7,7 +7,7 @@ Latest Articles
 </div>
 {% assign page = site.posts | first %}
 <div class="page-date">
-  <a href="{{ site.baseurl }}{{ page.url }}">{{ page.date | date:"%Y/%m/%d" }}</a>
+  <a href="{{ site.baseurl }}{{ page.url }}">#{{ page.date | date:"%Y%m%d" }}</a>
 </div>
 {% for article in page.articles %}
 <div id="A{{ forloop.index }}" class="article">

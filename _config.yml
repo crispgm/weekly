@@ -8,13 +8,7 @@ defaults:
       type: posts
     values:
       layout: weekly-post
-      title: Crisp Weekly
-  - scope:
-      path: ""
-      type: newsletter
-    values:
-      layout: weekly-mail
-      title: Crisp Weekly
+      type: post
 exclude:
   - Gemfile
   - Gemfile.lock
