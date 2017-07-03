@@ -86,14 +86,9 @@ end
 
 def create_weekly(weekly_date, weekly_content)
   html_file = "#{get_weekly_dir}/#{weekly_date}-weekly.md"
-  email_file = "#{get_newsletter_dir}/#{weekly_date}-weekly.md"
-  email_content = "---\ndatasrc: #{weekly_date}-weekly\n---"
-
   File.new(html_file, "w").syswrite(weekly_content)
-  File.new(email_file, "w").syswrite(email_content)
 
   show_info("#{html_file} is created.")
-  show_info("#{email_file} is created.")
 end
 
 def import_articles_from_issues(issue_name)
