@@ -19,15 +19,15 @@
   }
 }
 .article-item {
-  /*margin-top: .5rem;*/
 }
 .article-share {
   display: none;
 }
 .article-title {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   color: #757980;
   font-weight: bold;
+  margin-bottom: .4rem;
 
   &:hover {
     .article-share {
@@ -36,7 +36,6 @@
   }
 }
 .article-comment {
-  margin-top: .4rem;
   font-size: .9rem;
 }
 @media (min-width: 48rem) {

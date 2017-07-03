@@ -2,23 +2,27 @@
 layout: default
 title: Home
 ---
-
-{% assign sorted_weekly = site.posts %}
-{% for weekly in sorted_weekly limit:5 %}
-<div class="article">
-  <div class="article-item">
-    <div class="article-title">
-      <a href="{{ site.baseurl }}{{ weekly.url }}">
-        {{ weekly.date | date: "%Y/%m/%d" }}
+<div class="page-title">
+Latest Articles
+</div>
+{% assign page = site.posts | first %}
+<div class="page-date">
+{{ page.date | date:"%Y/%m/%d" }}
+</div>
+{% for article in page.articles %}
+<div id="A{{ forloop.index }}" class="article">
+  <div class="article-title">
+    <a href="{{ article.link}}" target="_blank">{{ article.title }}</a>
+    <span class="article-share">
+      <a href="#A{{ forloop.index }}">
+        <i class="fa fa-paragraph"></i>
       </a>
-    </div>
-    <div class="article-comment">
-      <ul>
-      {% for item in weekly.articles %}
-        <li><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></li>
-      {% endfor %}
-      </ul>
-    </div>
+    </span>
   </div>
+  {% if article.comment %}
+    <div class="article-comment">
+      {{ article.comment }}
+    </div>
+  {% endif %}
 </div>
 {% endfor %}

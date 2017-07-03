@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {
   text-decoration: none;
+  color: #333;
   &:hover {
     text-decoration: underline;
   }
@@ -52,8 +53,8 @@ nav{
 }
 /* Menu */
 #head {
-  margin-top: -0.2rem;
-  font-size: 1.2rem;
+  margin-top: -0.4rem;
+  font-size: 1.1rem;
   text-align: left;
   font-weight: bold;
 }
@@ -78,7 +79,7 @@ nav{
 }
 .menu-active {
   a {
-    color: #ffffff;
+    color: #b4b8bf;
     text-decoration: none;
   }
 }
@@ -128,4 +129,8 @@ img {
 ul li {
   margin-left: -1rem;
   line-height: 1.5;
+}
+p {
+  margin: 0;
+  padding-top: 1rem;
 }
