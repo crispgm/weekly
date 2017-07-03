@@ -26,21 +26,26 @@ Personal curation of tech articles.
     $ rake serve
     ```
 
-## Folder Structure
+## Deliver Articles
 
-* Weekly posts are in `_posts/`
-* Weekly newsletters are in `_newsletter/`
+To deliver articles, please leave comment to [issue](https://github.com/crispgm/weekly/issues) with specific format:
 
 ```
-_posts/
-    2016-09-06-weekly.md
-    ...
-_newsletter/
-    2016-09-06-weekly-email.md
-    ...
+/post
+- Your awesome title
+- https://your-awesome.com/link-to-article.html
+- Why you recommend the article in short.
 ```
 
-## `rake` Commands
+### Format Specification
+
+| Field | Type |
+|------|-----|
+| title | String (Support inline html) |
+| link | String |
+| comment | String (Support inline html) |
+
+## Work with `rake`
 
 ### Create Weekly
 
@@ -52,7 +57,6 @@ It will generate scaffolds with date:
 
 ```
 _weekly/2016-10-09-weekly.md
-_newsletter/2016-10-09-weekly-email.md
 ```
 
 To specify date:
@@ -92,13 +96,6 @@ To use non-default editors, pass an env variable to `rake`:
 ```
 $ EDITOR=subl rake weekly:edit-latest
 ```
-### YAML Format
-
-| Field | Type |
-|------|-----|
-| title | String (Support inline html) |
-| link | String |
-| comment | String (Support inline html) |
 
 ### Tests
 
