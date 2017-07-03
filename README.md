@@ -129,10 +129,9 @@ Errors will show with highlighted message to indicates the item:
      >> Name: Google 是如何做到从不宕机的
 ```
 
-## Content Source
+## Press
 
-- [Wanqu](https://wanqu.co/)
-- [掘金](https://juejin.im/)
+- [How I build engineering weekly automatically](https://crispgm.com/page/engineering-weekly-automation.html) (In Chinese)
 
 ## License
 
