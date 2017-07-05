@@ -112,8 +112,7 @@ def import_articles_from_issues(issue_name)
     title = ""
     link = ""
     comment = ""
-    i = 0
-    body.split("\r\n").each do |line|
+    body.split("\r\n").each_with_index do |line, i|
       if line.strip.empty?
         next
       end
@@ -132,8 +131,6 @@ def import_articles_from_issues(issue_name)
         comment = Spacifier.spacify(line.strip.split("- ").at(1))
         articles << { :title => title, :link => link, :comment => comment }
       end
-
-      i = i + 1
     end
   end
 
