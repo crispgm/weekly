@@ -187,5 +187,6 @@ def find_issue_link
 end
 
 def weekly_url(weekly_date)
-  "https://crispgm.github.io/weekly/#{weekly_date}-weekly.html"
+  weekly_url_date = weekly_date.split("-").join("/")
+  "https://crispgm.github.io/weekly/#{weekly_url_date}/weekly.html"
 end
