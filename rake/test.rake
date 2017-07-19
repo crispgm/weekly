@@ -24,9 +24,9 @@ task "test-weekly", [:date] do |t, args|
       exit(1)
     end
 
-    title_record = Hash.new
-    comment_record = Hash.new
-    link_record = Hash.new
+    title_record = {}
+    comment_record = {}
+    link_record = {}
 
     content["articles"].each_with_index do |article, index|
       article["title"] = "" if !article.has_key?("title")
