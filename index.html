@@ -5,11 +5,11 @@ title: Home
 <div class="page-title">
 Latest Articles
 </div>
-{% assign page = site.posts | first %}
+{% assign first_post = site.posts | first %}
 <div class="page-date">
-  <a href="{{ site.baseurl }}{{ page.url }}">#{{ page.date | date:"%Y%m%d" }}</a>
+  <a href="{{ site.baseurl }}{{ first_post.url }}">#{{ first_post.date | date:"%Y%m%d" }}</a>
 </div>
-{% for article in page.articles %}
+{% for article in first_post.articles %}
 <div id="A{{ forloop.index }}" class="article">
   <div class="article-title">
     <a href="{{ article.link }}" target="_blank">{{ article.title }}</a>

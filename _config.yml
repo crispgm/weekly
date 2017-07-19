@@ -1,7 +1,4 @@
 baseurl: "/weekly"
-collections:
-  newsletter:
-    output: true
 defaults:
   - scope:
       path: ""
