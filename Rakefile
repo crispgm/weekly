@@ -20,6 +20,10 @@ def show_info(message)
   puts "[INFO] #{message}".green
 end
 
+def show_error(message)
+  puts "[ERROR] #{message}".red
+end
+
 def show_message_on_article(level, message, article, highlight_item)
   puts "[#{level}] #{message.capitalize}:"
 

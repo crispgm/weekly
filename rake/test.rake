@@ -17,7 +17,12 @@ task "test-weekly", [:date] do |t, args|
 
     puts "[INFO] Checking #{weekly_file}...".green
 
-    content = YAML.load(open("#{get_weekly_dir}/#{weekly_file}").read)
+    begin
+      content = YAML.load(open("#{get_weekly_dir}/#{weekly_file}").read)
+    rescue Psych::SyntaxError => e
+      show_error("Syntax error found in #{weekly_file}: #{e}")
+      exit(1)
+    end
 
     title_record = Hash.new
     comment_record = Hash.new
