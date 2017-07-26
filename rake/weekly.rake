@@ -167,7 +167,7 @@ end
 def open_issue(weekly_date)
   client = Octokit::Client.new(:access_token => get_access_token)
   content = <<-EOS
-:loud_sound:MSBU Weekly #{weekly_date} is now in collecting.
+:loud_sound:Crisp Weekly #{weekly_date} is now in collecting.
   EOS
   client.create_issue(get_weekly_repo, get_issue_name(weekly_date), content)
 
