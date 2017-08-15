@@ -68,7 +68,7 @@ articles:
     sh "$EDITOR #{get_weekly_dir}/#{latest}"
   end
 
-  desc "Open the latet issue"
+  desc "Open the latest issue"
   task "open-latest-issue" do
     link = find_issue_link
     if OS.mac?
