@@ -36,7 +36,7 @@ articles:
     sh "git add ."
     sh "git commit --allow-empty -m \"#{msg}\""
     sh "git push"
-    # say thanks and close issue
+    # close issue
     close_issue(weekly_date)
   end
 
@@ -156,7 +156,7 @@ def close_issue(weekly_date)
   EOS
 
   client.add_comment(get_weekly_repo, number, comment)
-  show_info("Saying thanks to contributors...")
+  show_info("Publishing on issue...")
   # close issue
   client.close_issue(get_weekly_repo, number)
   show_info("Closing issue...")
