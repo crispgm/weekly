@@ -1,10 +1,12 @@
 # Crisp Wiki
 
-[![](https://img.shields.io/badge/powered%20by-jekyll-red.svg)](https://jekyllrb.com)
+[![](https://img.shields.io/badge/powered%20by-jekyll-blue.svg)](https://jekyllrb.com)
 [![](https://api.travis-ci.org/crispgm/weekly.svg)](https://travis-ci.org/crispgm/weekly)
 ![](https://stars-badge.herokuapp.com/crispgm/weekly/last-pages-build.svg)
 
 Personal curation of tech articles.
+
+个人收集的程序设计和IT业界文章，起初是周刊，现在已经变成不定期（但不超过一个月）。目前已独自坚持了2年。
 
 ## Install
 
