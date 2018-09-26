@@ -1,12 +1,12 @@
-# Crisp Wiki
+# [Crisp Programming Weekly](https://crispgm.github.io/weekly/)
 
-[![](https://img.shields.io/badge/powered%20by-jekyll-blue.svg)](https://jekyllrb.com)
 [![](https://api.travis-ci.org/crispgm/weekly.svg)](https://travis-ci.org/crispgm/weekly)
+[![](https://img.shields.io/badge/powered%20by-jekyll-blue.svg)](https://jekyllrb.com)
 ![](https://stars-badge.herokuapp.com/crispgm/weekly/last-pages-build.svg)
 
-Personal curation of tech articles.
+Personal curation of tech articles. The articles are mostly English and the comments are in Chinese.
 
-个人收集的程序设计和IT业界文章，起初是周刊，现在已经变成不定期（但不超过一个月）。目前已独自坚持了2年。
+个人收集的程序设计和IT业界文章，主要是英文为主。起初是周刊，现在已经变成不定期（但不超过一个月）。目前已独自坚持了2年。
 
 ## Install
 
