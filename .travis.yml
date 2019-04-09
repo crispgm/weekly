@@ -1,9 +1,11 @@
-script:
-  - "bundle exec rake test-weekly"
 language: ruby
 cache: bundler
 rvm:
-  - 2.3.1
+  - 2.6.0
+before_install:
+  - gem update --system
+  - gem install bundler
+script:
+  - "bundle exec rake test-weekly"
 notifications:
-  slack: navyblue-team:ioO5diAGc5WUQVDKc5BH1UbE
   email: false
