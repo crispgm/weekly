@@ -1,4 +1,4 @@
-# [Crisp Programming Weekly](https://crispgm.github.io/weekly/)
+# [Crisp Minimal Weekly](https://crispgm.github.io/weekly/)
 
 [![](https://api.travis-ci.org/crispgm/weekly.svg)](https://travis-ci.org/crispgm/weekly)
 [![](https://img.shields.io/badge/powered%20by-jekyll-blue.svg)](https://jekyllrb.com)

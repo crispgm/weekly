@@ -1,4 +1,5 @@
 baseurl: "/weekly"
+name: "Crisp Minimal Weekly"
 defaults:
   - scope:
       path: ""

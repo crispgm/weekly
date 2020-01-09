@@ -4,7 +4,7 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Crisp Programming Weekly</title>
+    <title>{{ site.name }}</title>
     <description>A curated list of tech articles.</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
@@ -14,7 +14,7 @@ layout: null
     {% assign sorted_weekly = site.posts | reverse %}
     {% for post in sorted_weekly %}
       <item>
-        <title>Crisp Programming Weekly - {{ post.date | date: "%Y/%m/%d"}}</title>
+        <title>{{ site.name }} - {{ post.date | date: "%Y/%m/%d"}}</title>
         {% capture content %}
         {% for item in post.articles %}
         <h2><a href="{{ item.link }}">{{ item.title }}</a></h2>
