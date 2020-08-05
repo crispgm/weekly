@@ -125,10 +125,12 @@ def import_articles_from_issues(issue_name)
         end
       when 1
         title = Spacifier.spacify(line.strip.split("- ").at(1))
+        title.gsub!("\"", "\\\"")
       when 2
         link = line.strip.split("- ").at(1)
       when 3
         comment = Spacifier.spacify(line.strip.split("- ").at(1))
+        comment.gsub!("\"", "\\\"")
         articles << { :title => title, :link => link, :comment => comment }
       end
     end
