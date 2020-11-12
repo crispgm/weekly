@@ -1,6 +1,6 @@
 # [Crisp Minimal Weekly](https://crispgm.github.io/weekly/)
 
-[![](https://api.travis-ci.org/crispgm/weekly.svg)](https://travis-ci.org/crispgm/weekly)
+![GitHub CI](https://github.com/crispgm/weekly/workflows/build/badge.svg)
 [![](https://img.shields.io/badge/powered%20by-jekyll-blue.svg)](https://jekyllrb.com)
 ![](https://stars-badge.herokuapp.com/crispgm/weekly/last-pages-build.svg)
 
