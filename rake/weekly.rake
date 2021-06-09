@@ -55,7 +55,7 @@ articles:
     articles.each do |item|
       weekly_content << "  - title:    \"#{item[:title]}\"\n"
       weekly_content << "    link:     \"#{item[:link]}\"\n"
-      weekly_content << "    comment:  \"#{item[:comment]}\"\n"
+      weekly_content << "    comment:  \"#{item[:comment]}\"\n" unless item[:comment].empty?
     end
     weekly_content << "---\n"
 
@@ -131,9 +131,9 @@ def import_articles_from_issues(issue_name)
       when 3
         comment = Spacifier.spacify(line.strip.split("- ").at(1))
         comment.gsub!("\"", "\\\"")
-        articles << { :title => title, :link => link, :comment => comment }
       end
     end
+    articles << { :title => title, :link => link, :comment => comment }
   end
 
   show_info("Import #{articles.count} article(s).")
