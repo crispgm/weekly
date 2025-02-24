@@ -112,7 +112,12 @@ def import_articles_from_issues(issue_name)
     title = ""
     link = ""
     comment = ""
-    body.split("\r\n").each_with_index do |line, i|
+
+    lines = body.split("\r\n")
+    if lines.length == 1
+      lines = body.split("\n")
+    end
+    lines.each_with_index do |line, i|
       if line.strip.empty?
         next
       end
@@ -120,7 +125,7 @@ def import_articles_from_issues(issue_name)
       case i
       when 0
         if !line.strip.eql?("/post")
-          puts "[INFO] Skip comment #{number}:#{item[:id]}".green
+          puts "[INFO] Skip comment #{number}:#{item[:id]}".yellow
           break
         end
       when 1
